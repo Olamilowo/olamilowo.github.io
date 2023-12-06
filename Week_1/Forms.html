@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Forms</title>
+</head>
+
+<body>
+    <form>
+        <label for="Username">Enter your username:</label>
+        <input type="text" id="username" placeholder="Input your username">
+        <br><br>
+        <label for="user_mail">Enter your email:</label>
+        <input type="email" id="user_email" placeholder="email">
+        <br><br>
+        <label for="user_password">Enter your password:</label>
+        <input type="password" id="user_password" placeholder="password">
+        <br><br>
+        <p>Select your gender:</p>
+        <input type="radio" id="male" name="gender">
+        <label for="male">male</label>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female">female</label>
+
+        <input type="radio" id="others" name="gender">
+        <label for="others">others</label>
+        <br><br>
+        <label for="questions">pick one securty questions:</label>
+        <select name="security questions" id="question">
+            <option value="pet name">What is your pet name?</option>
+            <option value="favorite color">What is your favorite color?</option>
+            <option value="favorite food">What is your favorite food</option>
+
+        </select>
+        <br><br>
+        <label for="answers">pick one securty answers:</label>
+        <select name="security_answers" id="answers">
+            <option value="pet name">luna</option>
+            <option value="favorite color">black</option>
+            <option value="favorite food">Yam</option>
+        </select>
+        <br><br>
+        <label for="bio">Your bio:</label><br>
+        <textarea name="bio" id="" cols="30" rows="10" placeholder="Tell us about yourself"></textarea>
+        <br><br>
+        <input type="submit" value="submit">
+
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>
