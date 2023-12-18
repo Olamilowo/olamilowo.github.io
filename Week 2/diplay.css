@@ -1,0 +1,17 @@
+h2{
+    background-color: blueviolet;
+    margin-top: 20pix;
+    margin-bottom: 0;
+    margin-left: 50px;
+    margin-right: 75px;
+}
+span{
+    display: block;
+}
+div{
+    display: inline-block;
+    margin: 30px;
+}
+h3{
+    padding: 20px 50px;
+}
