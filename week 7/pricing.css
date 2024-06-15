@@ -1,0 +1,73 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(204, 223, 231);
+    text-align: center;
+}
+header{
+    color: rgb(137, 118, 213);
+    font-size: 30px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+}
+.Basic{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 3%;
+    align-items: center;
+    color: rgb(182, 181, 181);
+}
+.Professional{
+    background-color: rgb(124, 113, 226);
+    width: 300px;
+    height: 350px;
+    position: relative;
+    z-index: 2;
+    border-radius: 3%;
+    color: white;
+}
+.Master{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 3%;
+    color: rgb(182, 181, 181);
+}
+h1{
+    font-size: 40px;
+    color: black;
+}
+.Professional h1{
+    color: white;
+}
+span p{
+    border-top: solid 1px rgb(182, 181, 181);
+    margin: 20px 20px 20px 20px;
+}
+button{
+    width: 260px;
+    border-style: none;
+    border-radius: 3%;
+    background-color: rgb(124, 113, 226);
+    color: rgb(204, 223, 231);
+}
+.Professional button{
+    background-color: white;
+    color: rgb(124, 113, 226);
+}
+@media  screen and ( max-width:785px ) {
+   section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   } 
+    .Master{
+    margin-top: 0px;
+}
+}

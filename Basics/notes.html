@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+</head>
+<body>
+    <ul class="list">
+        <li>Test Note</li>
+    </ul>
+    <input type="text" class="input-text">
+    <button class="submit-btn">submit</button>
+    <button class="delete">delete</button>
+</body>
+<script>
+    const list = document.querySelector(".list")
+    const input = document.querySelector(".input-text")
+    const btn = document.querySelector(".submit-btn")
+    const deletebtn = document.querySelector(".delete")
+
+    btn.addEventListener("click", function(){
+        list.innerHTML += `<li>${input.value}</li>`
+    })
+
+  deletebtn.addEventListener("click", function() {
+    list.removeChild(list.firstElementChild)
+  })
+</script>
+</html>

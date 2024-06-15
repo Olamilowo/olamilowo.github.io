@@ -1,0 +1,58 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color:white;
+}
+header{
+    text-align: center;
+    margin: 0px;
+}
+h1{
+    font-weight: normal;
+    margin: 0px;
+}
+h2{
+    font-size: 33px;
+    margin: 0px;
+}
+section{
+    justify-content: flex-end;
+    align-items: stretch;
+}
+.Team {
+    background-color:white;
+    border-top: 3px solid red;
+    width: 350px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: left;
+}
+.Supervisor{
+    background-color:white;
+    border-top: 3px solid rgb(5, 178, 149);
+    width: 350px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+}
+.Calculator{
+    background-color:white;
+    border-top: 3px solid blue;
+    width: 350px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.Karma{
+    background-color:white;
+    border-top: 3px solid orange;
+    width: 350px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+span{
+    display: flex;
+    justify-content: flex-end;
+}

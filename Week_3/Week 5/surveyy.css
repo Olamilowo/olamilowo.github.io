@@ -1,0 +1,87 @@
+/* We would be using a measurement unit called REM, It is a relative unit that uses our html element default font size for calculation. example: The default font-size is 16px, 1rem = 16px, 2rem = 32px, 3rem = 3 * 16 => 48 */
+
+/* But, i want to configure the default font size such that 1rem = 10px, 2rem = 20px etc. I believe that is much easier. We can change the default font=seize byt setting it to 62.% */
+html {
+    /* Default font-size: 16px */
+      /* font-size: 62.5%; */
+    /* 62.5% of 16px = 10px */
+    /* OR... */
+    font-size: 10px;
+  }
+  
+  body {
+      font-family: "Quicksand", sans-serif;
+      font-size: 1.6rem; /* 1.6rem = 16px */
+      font-weight: 400;
+      background-image: linear-gradient(
+          to right,
+          rgba(165, 69, 111, 0.75),
+          rgba(148, 187, 233, 0.75)
+      );
+      color: #ffffff;
+      padding: 2rem 0;
+  }
+  
+  main {
+      max-width: 72rem; /* Ensures the content is not larger 720px  */
+      margin: 0 auto; /* Centers the content */
+  }
+  
+  header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+  }
+  
+  #title {
+      margin-bottom: 0.8rem;
+  }
+  
+  #description {
+      font-size: 125%; /* 125% of 1.6rem = 2rem */
+  }
+  
+  #survey-form {
+      background-color: rgba(27, 27, 50, 0.9);
+      padding: 3rem 5rem;
+      border-radius: 0.65rem; /* Recall 1rem = 10px; 0.65rem * 10 = 6.5px */
+  }
+  
+  .form-class {
+      margin-bottom: 2rem;
+  }
+  
+  .form_input {
+      display: block;
+      width: 100%;
+      outline: none; /* Removes the default outline i.e border you see when you click on the input field */
+      font-family: inherit; /* Inherits the font-family from the parent element */
+      padding: 1.2rem 1.2rem;
+      margin-top: 0.4rem;
+      border-radius: 0.5rem;
+  }
+  
+  .form-class_label {
+      display: block;
+      margin: 0.3rem 0;
+  }
+  
+  .form_submit,
+  .form_reset {
+      display: inline-block;
+      margin: 1.5rem 0;
+      width: 100%;
+      color: #ffffff;
+      padding: 1.3rem 0;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+  }
+  
+  .form_submit {
+      background-color: #37af65;
+  }
+  
+  .form_reset {
+      background-color: rgb(241, 92, 92);
+  }
+  

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    background-color: rgb(15, 2, 23);
+    color: white;
+    font-family:var(san-serif) ;
+    margin: 0px;
+}
+nav ul{
+    display: flex;
+    padding: 80px;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+
+    
+}
+
+img {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+}
+
+
+#intro {
+    padding: 200px;
+    
+}
+#intro h2{
+    font-size: 80px;
+    margin: 0px;
+}
+
+span {
+    color: aqua;
+    font-size: 80px;
+}
+
+#projects{
+    background-color: rgb(3, 46, 69);
+    padding: 20px 200px 20px 200px;
+    margin: 0px;
+}
+
+#project h2{
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+#contact {
+    background-color: rgb(72, 3, 72);
+    text-align: center;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 60px 60px;
+}
+#contact h2 {
+    margin: 0px auto;
+    font-size: 2rem;
+    padding-bottom: 30px ;
+    width: 400px;
+    
+}
+
+#contact p{
+    max-width: 20rem;
+    text-align: center;
+    justify-content: center;
+    margin: 0px auto;
+    padding-bottom: 50px;
+}
+.button{
+    background-color: rgb(218, 10, 218);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer{
+    text-align: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 2rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    
+}

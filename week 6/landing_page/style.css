@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #eee;
+  font-size: 1.6rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+
+  position: fixed;
+  top: 0;
+  background-color: #eee;
+}
+
+.logo {
+  width: 30%;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 6rem;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.input-form {
+  margin-top: 10rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-form h1 {
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#input-text {
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+#input-submit {
+  padding: .8rem 0;
+  background-color: #f1c40f;
+  font-weight: 700;
+  border: none;
+}
+
+.features {
+  max-width: 900px;
+  margin: 7rem auto;
+
+}
+
+.feature_container {
+  display: flex;
+  gap: 2rem;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing {
+  display: flex;
+  margin: 7rem 0;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.card {
+  border: 1px solid black;
+}
+
+.card-heading {
+  background-color: #ddd;
+  padding: 1.5rem 8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.card-text--price {
+  font-size: 2.5rem;
+}
+
+button {
+  background-color: #f1c40f;
+  padding: 1.2rem 1.8rem;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.45rem;
+}
+
+footer {
+  background-color: #ddd;
+  padding: 3.5rem 2rem;
+  text-align: right;
+}
+
+footer ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  color: #444;
+}
+
+ion-icon {
+  font-size: 64px;
+  color: #caa613;
+}

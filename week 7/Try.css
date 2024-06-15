@@ -1,0 +1,68 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ff8787;
+    background-image: url(images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.First{
+    color: white;
+    align-items: center;
+}
+.class{
+    background-color: white;
+}
+.head{
+    background-color: rgb(116, 62, 197);
+    padding: 3px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0,0.2);
+    border-radius: 3px;
+}
+form{
+    background-color: white;
+    padding: 10px;
+    height: 500px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 3px 5px rgba(0, 0, 0,0.2);
+    text-align: center;
+}
+.input{
+    margin-top: 15px;
+}
+input{
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 3px
+}
+ form p{
+    color: black;
+ }
+ span{
+    color: red;
+ }
+ button{
+    background-color: rgb(18, 181, 18);
+    width: 400px;
+    height: 40px;
+    border-radius: 3px;
+    border-color: none;
+ }
+@media screen and (max-width: 830px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

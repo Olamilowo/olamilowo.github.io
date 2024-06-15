@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: inter;
+}
+header{
+    background-color:  rgb(131, 155, 10);
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+h1{
+    border:solid;
+    border-color: white;
+    border-width: 8px;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 35px;
+}
+.banner img{
+    max-width: 100%;
+}
+.welcome h2{
+    color: white;
+    background-color: rgba(219, 204, 204, 0.5);
+    font-size: 50px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    
+}
+.banner{
+    position: relative;
+}
+.welcome{
+    position: absolute;
+    left: 0px;
+    bottom: 310px;
+    z-index: 0;
+}
+.welcome h2 span{
+    font-size: 120px;
+}
+nav{
+    background-color: rgb(193, 185, 185);
+    padding: 25px;
+    position: sticky;
+    z-index: 2;
+    top: 100px;
+}
+nav ul{
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    max-width: 120%;
+}
+nav li{
+    display: inline-block;
+    width: 25%;
+}
