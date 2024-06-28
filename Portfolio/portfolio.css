@@ -37,6 +37,11 @@ span {
     font-size: 80px;
 }
 
+h3{
+    font-size: 2rem;
+    margin: 0;
+    color: aqua;
+}
 #projects{
     background-color: rgb(3, 46, 69);
     padding: 20px 200px 20px 200px;
@@ -69,6 +74,29 @@ span {
     margin: 0px auto;
     padding-bottom: 50px;
 }
+.ben10{
+    text-align: right;
+    margin-left: 32rem;
+}
+.box{
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(15, 2, 23);
+    padding: 20px;
+    font-size: 18px;
+    width: 35rem;
+    z-index: 1;
+}
+
+div img{
+    box-shadow: 10px;
+    position: relative;
+    height: 20rem;
+    width: 35rem;
+    border: 20px solid rgb(3, 46, 69);
+    border-radius: 5px;
+    height: 300px;
+}
 .button{
     background-color: rgb(218, 10, 218);
     color: white;
@@ -90,5 +118,8 @@ footer p{
 footer ul {
     list-style: none;
     display: flex;
-    
+    justify-content: center;
+}
+li img{
+    background-color: rgb(218, 10, 218);
 }

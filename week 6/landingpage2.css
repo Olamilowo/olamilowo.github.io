@@ -73,13 +73,12 @@
   }
   
   #input-submit {
-    padding: .8rem 0;
+    padding: 8rem 0;
     background-color: green;
     font-weight: 700;
     border: none;
     border-radius: 10px;
-  }
-  
+  }                                                             
   .features {
     max-width: 900px;
     margin: 7rem auto;
@@ -107,6 +106,7 @@
   
   .card {
     border: 1px solid black;
+    border-radius: 5px;
   }
   
   .card-heading {
