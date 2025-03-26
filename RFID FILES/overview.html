@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Overview</title>
+  <link rel="stylesheet" href="overview.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Attendance Overview</h1>
+    <nav>
+      <a href="overview.html" class="active">Overview</a>
+      <a href="deepseek.html">Attendance Log</a>
+      <a href="report-page.html">Reports</a>
+      <button id="logoutBtn">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Summary Cards -->
+    <div class="summary-grid">
+      <div class="summary-card">
+        <h3>Total Students</h3>
+        <p id="total-students">0</p>
+      </div>
+      <div class="summary-card">
+        <h3>Present Today</h3>
+        <p id="present-today">0</p>
+      </div>
+      <div class="summary-card">
+        <h3>Absent Today</h3>
+        <p id="absent-today">0</p>
+      </div>
+      <div class="summary-card">
+        <h3>Attendance Rate</h3>
+        <p id="attendance-rate">0%</p>
+      </div>
+    </div>
+
+    <!-- Charts Section -->
+    <div class="chart-container">
+      <div class="chart-box">
+        <canvas id="attendanceTrend"></canvas>
+      </div>
+      <div class="chart-box">
+        <canvas id="dailyStatus"></canvas>
+      </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="recent-activity">
+      <h2>Recent Attendance Logs</h2>
+      <table id="recent-logs">
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Class</th>
+            <th>Check-In</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Populated by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="overview.js"></script>
+</body>
+</html>

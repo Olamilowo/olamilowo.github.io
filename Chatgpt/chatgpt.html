@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Attendance Management System</title>
+  <link rel="stylesheet" href="chatgpt.css" />
+  <!-- FullCalendar CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/main.min.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Login Section -->
+  <section id="loginSection">
+    <h1>School Attendance Management System - Login</h1>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required />
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginError" style="color: red; display: none;">Invalid credentials. Please try again.</p>
+  </section>
+  
+  <!-- Main Section (displayed after successful login) -->
+  <section id="mainSection" style="display: none;">
+    <header>
+      <h1>School Attendance Management System</h1>
+      <nav>
+        <ul id="navTabs">
+          <li data-section="dashboardSection" class="active">Dashboard</li>
+          <li data-section="studentSection">Student Management</li>
+          <li data-section="classSection">Class Management</li>
+          <li data-section="reportSection">Reports & Analytics</li>
+          <li data-section="calendarSection">Calendar & Events</li>
+        </ul>
+      </nav>
+      <button id="logoutButton">Logout</button>
+    </header>
+    
+    <main>
+      <!-- Dashboard Section -->
+      <section id="dashboardSection" class="content-section">
+        <h2>Dashboard</h2>
+        <div id="summary">
+          <div class="card">Total Students: <span id="totalStudents">0</span></div>
+          <div class="card">Present Today: <span id="presentToday">0</span></div>
+          <div class="card">Absent Today: <span id="absentToday">0</span></div>
+        </div>
+        <section id="attendance">
+          <h2>Attendance Records</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Status</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody id="attendanceTable">
+              <!-- Attendance records will be added here dynamically -->
+            </tbody>
+          </table>
+        </section>
+      </section>
+      
+      <!-- Student Management Section -->
+      <section id="studentSection" class="content-section" style="display: none;">
+        <h2>Student Management</h2>
+        <button id="addStudentButton">Add New Student</button>
+        <table id="studentTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Class</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Student rows will be inserted here dynamically -->
+          </tbody>
+        </table>
+      </section>
+      
+      <!-- Class Management Section -->
+      <section id="classSection" class="content-section" style="display: none;">
+        <h2>Class Management</h2>
+        <button id="addClassButton">Add New Class</button>
+        <table id="classTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Class Name</th>
+              <th>Teacher</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Class rows will be inserted here dynamically -->
+          </tbody>
+        </table>
+      </section>
+      
+      <!-- Reports & Analytics Section -->
+      <section id="reportSection" class="content-section" style="display: none;">
+        <h2>Reports & Analytics</h2>
+        <canvas id="attendanceChart" width="400" height="200"></canvas>
+      </section>
+      
+      <!-- Calendar & Events Section -->
+      <section id="calendarSection" class="content-section" style="display: none;">
+        <h2>Calendar & Events</h2>
+        <div id="calendar"></div>
+      </section>
+    </main>
+  </section>
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- FullCalendar JS -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/main.min.js"></script>
+  <script src="chatgpt.js"></script>
+</body>
+</html>

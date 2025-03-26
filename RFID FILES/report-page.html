@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Attendance Report</title>
+  <link rel="stylesheet" href="report-page.css">
+  <!-- Include Chart.js for visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>General Attendance Report</h1>
+    <nav>
+      <a href="admin-dashboard.html">Admin Dashboard</a>
+      <select id="school-filter">
+        <option value="all">All Schools</option>
+      </select>
+      <select id="class-filter">
+        <option value="all">All Classes</option>
+        <option value="Form 1">Form 1</option>
+        <option value="Form 2">Form 2</option>
+        <option value="Form 3">Form 3</option>
+        <option value="Form 4">Form 4</option>
+        <option value="Form 5">Form 5</option>
+        <option value="Form 6">Form 6</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Summary Cards -->
+    <div class="summary-cards">
+      <div class="card">
+        <h3>Total Students</h3>
+        <p id="total-students">0</p>
+      </div>
+      <div class="card">
+        <h3>Total Days Tracked</h3>
+        <p id="total-days">0</p>
+      </div>
+      <div class="card">
+        <h3>Overall Attendance</h3>
+        <p id="attendance-percent">0%</p>
+      </div>
+    </div>
+
+    <!-- Attendance Trends Chart -->
+    <div class="chart-container">
+      <canvas id="attendance-trends"></canvas>
+    </div>
+
+    <!-- Detailed Table -->
+    <table id="detailed-report">
+      <thead>
+        <tr>
+          <th>School</th>
+          <th>Class</th>
+          <th>Total Students</th>
+          <th>Attendance Average</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data populated by JavaScript -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="report-page.js"></script>
+</body>
+</html>

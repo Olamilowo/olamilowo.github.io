@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Attendance Management System</title>
+  <link rel="stylesheet" href="chatgpt.css">
+</head>
+<body>
+  <!-- Login Section -->
+  <section id="loginSection">
+    <h1>School Attendance Management System - Login</h1>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginError" style="color: red; display: none;">Invalid credentials. Please try again.</p>
+  </section>
+  
+  <!-- Dashboard Section -->
+  <section id="dashboardSection" style="display: none;">
+    <header>
+      <h1>School Attendance Management System</h1>
+      <button id="logoutButton">Logout</button>
+    </header>
+    <main>
+      <section id="dashboard">
+        <h2>Dashboard</h2>
+        <div id="summary">
+          <div class="card">Total Students: <span id="totalStudents">0</span></div>
+          <div class="card">Present Today: <span id="presentToday">0</span></div>
+          <div class="card">Absent Today: <span id="absentToday">0</span></div>
+        </div>
+      </section>
+      <section id="attendance">
+        <h2>Attendance Records</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Class</th>
+              <th>Status</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody id="attendanceTable">
+            <!-- Attendance records will be added here dynamically -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </section>
+  <script src="chatgpt.js"></script>
+</body>
+</html>

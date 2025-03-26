@@ -5,26 +5,41 @@ body {
     color: white;
     font-family:var(san-serif) ;
     margin: 0px;
+    width: 100%;
 }
 nav ul{
     display: flex;
-    padding: 80px;
-    justify-content: space-between;
-    text-align: center;
+    flex-direction: row;
+    padding: 40px 50px 80px 40px;
+    justify-content: center;
+    align-items: center;
     list-style: none;
-
-    
+    gap: 2rem;  
+    width: 100%;
+}
+.ProfilePic{
+    height: 50px;
+    width: 50px;
+    border-radius: 22px;
+    margin-right: 800px;
+}
+.link{
+    text-decoration: none;
+    color: white;
 }
 
 img {
-    height: 70px;
-    width: 70px;
+    height: 40px;
+    width: 40px;
     background-color: white;
+    color: aqua;
 }
 
 
 #intro {
-    padding: 200px;
+    padding: 40px 150px 150px 150px;
+    max-width: 1200px;
+    width: 100%;
     
 }
 #intro h2{
@@ -46,18 +61,26 @@ h3{
     background-color: rgb(3, 46, 69);
     padding: 20px 200px 20px 200px;
     margin: 0px;
+    justify-content: center;
+}
+main{
+    display: inline;
 }
 
-#project h2{
-    font-size: 50px;
-    padding-bottom: 40px;
-}
+/* #project h2{ */
+    /* font-size: 50px; */
+    /* padding-bottom: 40px; */
+/* } */
 #contact {
     background-color: rgb(72, 3, 72);
+    width: 100%;
     text-align: center;
+    align-items: center;
     justify-content: center;
     margin: 0px auto;
-    padding: 60px 60px;
+    padding: 60px 60px 60px 60px;
+    margin-right: 0px;
+    
 }
 #contact h2 {
     margin: 0px auto;
@@ -76,7 +99,25 @@ h3{
 }
 .ben10{
     text-align: right;
-    margin-left: 32rem;
+    margin-left: 30rem;
+}
+.Ben10project{
+    margin-top: -220px;
+}
+.Trillo{
+    margin-top: 70px;
+}
+.TrilloProject{
+    margin-left: 30rem;
+    margin-top: -200px;
+}
+.Dice{
+text-align: right;
+margin-left: 30rem;
+margin-top: 70px;
+}
+.Dicegame{
+    margin-top: -180px;
 }
 .box{
     position: absolute;
@@ -86,15 +127,18 @@ h3{
     font-size: 18px;
     width: 35rem;
     z-index: 1;
+    max-width: 1200px;
 }
 
 div img{
     box-shadow: 10px;
     position: relative;
+    background-color: rgb(3, 46, 69);
     height: 20rem;
     width: 35rem;
-    border: 20px solid rgb(3, 46, 69);
-    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid rgb(60, 227, 227);
+    border-radius: 20px;
     height: 300px;
 }
 .button{
@@ -109,17 +153,83 @@ div img{
 footer{
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
 footer p{
     font-size: 2rem;
+    justify-content: center;
+    text-align: center;
 }
 
 footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    gap: 50px;
 }
 li img{
-    background-color: rgb(218, 10, 218);
+    background-color: aqua;
+}
+
+@media screen and (max-width: 1260px){
+    /* section{ */
+        /* padding-right:250px ; */
+        /* max-width: 100%; */
+        /* margin: auto; */
+    /* } */
+    .ben10{
+        margin-left: 0px;
+        text-align: left;
+    }
+    .Ben10project{
+        margin-top: 0px;
+    }
+    .Trillo{
+        margin-top: 0px;
+    }
+    .TrilloProject{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .Dice{
+        margin-left: 0px;
+        margin-top: 0px;
+        text-align: left;
+
+    }
+    .Dicegame{
+        margin-top: 0px;
+    }
+    .ProfilePic{
+        margin-right: 500px;
+    }
+}
+@media screen and (max-width: 960px) {
+    #projects{
+        width: 100%;
+    }
+    #contact{
+        width: 100%;
+        margin-right: 0px;
+        padding-right: 350px;
+    }
+    .ProfilePic{
+        margin-right: 200px;
+    }
+}
+@media screen and (max-width: 600px) {
+    #contact{
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+    footer{
+        padding-left: 200px;
+        margin-left: 100px;
+        /* padding-right: 200px; */
+    }
+    .ProfilePic{
+        margin-right: 100px;
+        margin-left: 200px;
+    }
 }

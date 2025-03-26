@@ -1,0 +1,111 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+  }
+  
+  header button {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    padding: 8px 12px;
+    background-color: #ff4d4d;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  #loginSection {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  #loginSection h1 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  #loginForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #loginForm label {
+    margin: 0.5em 0 0.2em;
+  }
+  
+  #loginForm input {
+    padding: 0.5em;
+    font-size: 1em;
+  }
+  
+  #loginForm button {
+    margin-top: 1em;
+    padding: 0.7em;
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  main {
+    padding: 2em;
+  }
+  
+  #summary {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    min-width: 150px;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 1em;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 0.5em;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    #summary {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

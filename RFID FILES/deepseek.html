@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Attendance Log</title>
+  <link rel="stylesheet" href="deepseek.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <a href="overview.html">Overview</a>
+      <a href="#" class="active">Attendance Log</a>
+      <a href="report-page.html">Reports</a>
+      <a href="#">Settings</a>
+      <select id="school-select">
+        <!-- Schools will be populated by J9avaScript -->
+      </select>
+      <select id="class-select">
+        <option value="Form 1">Form 1</option>
+        <option value="Form 2">Form 2</option>
+        <option value="Form 3">Form 3</option>
+        <option value="Form 4">Form 4</option>
+        <option value="Form 5">Form 5</option>
+        <option value="Form 6">Form 6</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <div class="filters">
+      <label for="date-range">Date Range:</label>
+      <input type="date" id="start-date">
+      <input type="date" id="end-date">
+      <button id="export-btn">Export to CSV</button>
+    </div>
+
+    <div id="attendance-by-date">
+      <!-- Attendance logs grouped by date, school, and class will be inserted here -->
+    </div>
+  </main>
+  <!-- Add this to your dashboard header -->
+<button id="logoutBtn" style="position: absolute; right: 20px; top: 20px;">
+  Logout
+</button>
+
+<script>
+  // Add logout functionality
+  document.getElementById('logoutBtn').addEventListener('click', () => {
+    localStorage.removeItem('adminUser');
+    window.location.href = 'login.html';
+  });
+
+  // Check authentication
+  if (!localStorage.getItem('adminUser')) {
+    window.location.href = 'login.html';
+  }
+</script>
+
+  <script src="deepseek.js"></script>
+</body>
+</html>
